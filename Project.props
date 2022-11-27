@@ -1,0 +1,42 @@
+<Project>
+
+  <ItemGroup Label="Resources">
+    <None Include="$(SourceRoot)favicon.png" Pack="true" Visible="false" PackagePath="/Resources/Images/" />
+  </ItemGroup>
+
+  <PropertyGroup Label="Product Details">
+    <Title>Detached Structure Playground</Title>
+    <AssemblyTitle>$(Title)</AssemblyTitle>
+    <Description>The Detached Structure Playground Library</Description>
+    <FileDescription>$(Description)</FileDescription>
+    <Product>DT.PG.Structure</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Repo Details">
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/jhfbosman/DT.PG.Structure.Abstractions.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Author Details">
+    <Authors>Detached Development &lt;dev@detached.co.za&gt;</Authors>
+    <Company>Detached Solutions (Pty) Ltd</Company>
+    <Copyright>©2022 Detached Solutions. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Package Details">
+    <IncludeSource>true</IncludeSource>
+    <IncludeSymbols>true</IncludeSymbols>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageIcon>/Resources/Images/favicon.png</PackageIcon>
+    <PackageLicenseExpression>BSD3</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/jhfbosman/DT.PG.Structure.Abstractions</PackageProjectUrl>
+    <PackageTags>Detached C# .NET</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Assembly Signing">
+    <SignAssembly>True</SignAssembly>
+    <DelaySign>True</DelaySign>
+    <AssemblyOriginatorKeyFile Condition=" '$(AssemblyOriginatorKeyFile)'=='' AND '$(Configuration)' == 'Debug' ">pubkey.dev.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+</Project>
